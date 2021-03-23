@@ -1,3 +1,15 @@
+# Sorting Visualizer
+This project was based on the video by Clement Mihailescu.
+To get a better understanding of the algorithms, I have written this project.
+It contains the following sort algorithms:
+* Bubble Sort
+* Insertion Sort
+* Heap Sort
+* Merge Sort
+* Radix Sort
+# Technologies
+* ReactJS
+* CSS
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
