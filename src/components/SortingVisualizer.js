@@ -3,7 +3,7 @@ import "./SortingVisualizer.css";
 
 export default function SortingVisualizer() {
     var heapsize;
-    const[arraySize,setArraySize]=useState(10);
+    const[arraySize,setArraySize]=useState(100);
     const[arrayToSort,setArrayToSort]=useState([]);
     const[algorithm,setAlgorithm]=useState("");
     const[animationSpeed,setAnimationSpeed]= useState(60);
@@ -398,9 +398,6 @@ export default function SortingVisualizer() {
                             let bar = document.getElementById(i).style;
                             bar.backgroundColor="#ff00ff";};
                     }}>Create new Array</div>
-                    <div>
-                        Length of the Array</div>
-                    <div><input type="range" min="2" max="125" defaultValue="10" step="1"  onChange={handleRange}/></div>
                     <div className="bubbleSort" id="bubbleSort" onClick={()=>{setAlgorithm("BubbleSort");changeColor("BubbleSort");}}>Bubble Sort</div>
                     <div className="insertionSort" id="insertionSort" onClick={()=>{setAlgorithm("InsertionSort");changeColor("InsertionSort");}}>Insertion Sort</div>
                     <div className="heapSort" id="heapSort" onClick={()=>{setAlgorithm("HeapSort");changeColor("HeapSort");}}>Heap Sort</div>
